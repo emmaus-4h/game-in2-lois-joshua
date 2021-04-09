@@ -81,9 +81,15 @@ var tekenKogel = function(x, y) {
  * @param {number} y y-coördinaat
  */
 var tekenSpeler = function(x, y) {
+  fill("black");
+  ellipse(x,y,5,5)
   fill("white");
-  ellipse(x,y,50,50)
-  
+  // joshua, dit moet je aanpassen, zodat x,y in het midden van je speler zit
+  // als je de speler wilt verplaatsen, dan kun je de waarde van spelerX en spelerY aanpassen
+  // zorg dat je snapt waarom dat veel handiger is, vraag het anders aan mij (je docent)
+  ellipse(x+2, y+100, 50, 50); 
+  ellipse(x+80,y+100,50,50);
+  rect(x+2,y+100,50,);
 
 };
 
