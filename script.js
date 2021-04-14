@@ -22,8 +22,8 @@ const SPELEN = 1;
 const GAMEOVER = 2;
 var spelStatus = SPELEN;
 
-var spelerX = 400; // x-positie van speler
-var spelerY = 200; // y-positie van speler
+var spelerX = 200; // x-positie van speler
+var spelerY = 521; // y-positie van speler
 
 var kogelX = 0;    // x-positie van kogel
 var kogelY = 0;    // y-positie van kogel
@@ -87,10 +87,10 @@ var tekenSpeler = function(x, y) {
   // joshua, dit moet je aanpassen, zodat x,y in het midden van je speler zit
   // als je de speler wilt verplaatsen, dan kun je de waarde van spelerX en spelerY aanpassen
   // zorg dat je snapt waarom dat veel handiger is, vraag het anders aan mij (je docent)
-  ellipse(x+2, y+100, 50, 50); 
-  ellipse(x+80,y+100,50,50);
-  rect(x+2,y+100,50,);
-
+  rect(x+22,y+80,35,80)
+  rect(x+42,y+120,37,60)
+  
+rect(x,y,85,85)
 };
 
 
