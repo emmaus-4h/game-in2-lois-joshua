@@ -22,6 +22,11 @@ const SPELEN = 1;
 const GAMEOVER = 2;
 var spelStatus = SPELEN;
 
+const KEY_DOWN = 83
+const KEY_UP = 87
+const KEY_LEFT = 65
+const KEY_RIGHT = 68
+
 var spelerX = 200; // x-positie van speler
 var spelerY = 521; // y-positie van speler
 
@@ -87,10 +92,10 @@ var tekenSpeler = function(x, y) {
   // joshua, dit moet je aanpassen, zodat x,y in het midden van je speler zit
   // als je de speler wilt verplaatsen, dan kun je de waarde van spelerX en spelerY aanpassen
   // zorg dat je snapt waarom dat veel handiger is, vraag het anders aan mij (je docent)
-  rect(x+22,y+80,35,80)
-  rect(x+42,y+120,37,60)
-  rect(x-2,y+120,37,60,)
-  rect(x,y,85,85)
+  rect(x+22,y+80,35,80)// head
+  rect(x+42,y+120,37,60)//right legs
+  rect(x-2,y+120,37,60,)// left leg
+  rect(x,y,85,85)// middle
 };
 
 
@@ -115,6 +120,20 @@ var beweegKogel = function() {
  * Updatet globale variabele spelerX en spelerY
  */
 var beweegSpeler = function() {
+  if(keyIsDown(KEY_LEFT)) {
+    spelerX=spelerX-4;
+  }
+if(keyIsDown(KEY_RIGHT)) {
+    spelerX=spelerX+4;
+ }
+ if(keyIsDown(KEY_UP)) {
+    spelerY=spelerY-4;
+ }
+  if(keyIsDown(KEY_DOWN)) {
+    spelerY=spelerY+4;
+ }
+
+
 
 };
 

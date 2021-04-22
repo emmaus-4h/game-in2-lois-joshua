@@ -17,3 +17,12 @@ html, body {
    */ 
   margin: 0px;
 }
+
+#mario {
+ width: 170px;
+ height: 160px;
+ background-image: url(img/konijn.gif);
+ 
+ position: absolute;
+ top: 300px;
+}
