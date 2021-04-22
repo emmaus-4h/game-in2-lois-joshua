@@ -89,8 +89,8 @@ var tekenSpeler = function(x, y) {
   // zorg dat je snapt waarom dat veel handiger is, vraag het anders aan mij (je docent)
   rect(x+22,y+80,35,80)
   rect(x+42,y+120,37,60)
-  
-rect(x,y,85,85)
+  rect(x-2,y+120,37,60,)
+  rect(x,y,85,85)
 };
 
 
