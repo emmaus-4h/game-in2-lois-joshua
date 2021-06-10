@@ -92,9 +92,13 @@ var tekenSpeler = function(x, y) {
   // joshua, dit moet je aanpassen, zodat x,y in het midden van je speler zit
   // als je de speler wilt verplaatsen, dan kun je de waarde van spelerX en spelerY aanpassen
   // zorg dat je snapt waarom dat veel handiger is, vraag het anders aan mij (je docent)
+  fill(255,0,0);
   rect(x+22,y+80,35,80)// head
+  
   rect(x+42,y+120,37,60)//right legs
+  fill(0,255,0);
   rect(x-2,y+120,37,60,)// left leg
+  
   rect(x,y,85,85)// middle
 };
 
@@ -133,6 +137,9 @@ if(keyIsDown(KEY_RIGHT)) {
     spelerY=spelerY+4;
  }
 
+if (spelerX < 0) {
+  spelerX = 0;
+}
 
 
 };
